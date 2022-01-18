@@ -2,13 +2,6 @@
 <HTML>
 <HEAD>
 
-	<STYLE TYPE="text/css">
-	<!--
-		@page { margin: 2cm }
-		P { margin-bottom: 0.21cm }
-		A:link { so-language: zxx }
-	-->
-	</STYLE>
 </HEAD>
 <BODY LANG="de-DE" DIR="LTR">
 <P STYLE="margin-bottom: 0cm">#
