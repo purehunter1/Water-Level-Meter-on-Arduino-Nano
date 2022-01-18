@@ -10,7 +10,7 @@ build up a water level meter with a self-made capacitive sensor based
 on an Arduino Nano with only very few additional components.<BR>It
 can be configured with an optional temperature compensation realized
 with only 3 more cheap components.<BR><BR>Measurement values are
-averaged over n cycles and normalized to 255 to fit in one Byte for
+averaged over n cycles for stable results and normalized to 255 to fit in one Byte for
 easy serial communication.<BR>The program can be modified to get the
 output as an analog value instead or additional to the serial data
 output. This opens the possibility to use an analog meter to display
