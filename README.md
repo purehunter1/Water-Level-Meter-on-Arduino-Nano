@@ -2,7 +2,6 @@
 <HTML>
 <HEAD>
 	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
-	<TITLE></TITLE>
 	<STYLE TYPE="text/css">
 	<!--
 		@page { margin: 2cm }
