@@ -11,7 +11,7 @@ With Cref=200pf + Csens=200pf in series, the capacity to be charged is 100pF. Wi
 The ADC sampling takes enough time (microseconds) to have stable conditions. It shows very constant results with a Nano.
 
 The Reference Cap is between DrivePin and MeasPin. Use class 1 caps, e.g. C0G/NP0 dielectric (stability, aging characteristics)
-Choose a Reference Cap in the Range of (min Sensor Cap. @ empty tank)*2 ->  750 > (AdcEmpty value) > 650 (with internal analog reference). (e.g. 100-200pF as a start value)
+Choose a Reference Cap in the Range of (min Sensor Cap. @ empty tank)*2 . This results in ADC readings:   750 > (AdcEmpty value) > 650 (with internal analog reference). (e.g. 100-200pF as a start value)
 The Capacitive Sensor is between MeasPin (the core wire) and GND (the tube). Wires from the Arduino to sensor should be as short as any possible (few cm, 30cm worked fine for me).
  
 The sensor is e.g. a 30-70cm INOX tube with 8-10mm inner diam. with an insulated centered drilled wire loop.
