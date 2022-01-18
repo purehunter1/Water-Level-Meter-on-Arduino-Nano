@@ -77,7 +77,10 @@ gives you 10 value pairs, e.g. xn=sensor value; yn=water volume<BR><BR>If
 the calculation with the gained formula is being done on the host
 computer, the &quot;Sensor Arduino&quot; with this program can be
 housed sealed and inacessible and all<BR>&quot;calibrations&quot; can
-be done on the host computer.<BR><BR>We can use the external
+be done on the host computer. To connect to a host, just connect the TX pin
+of the Arduino with the RX pin of another Arduino, an ESP or whatever.
+Also connect the GNDs with each other and take care for a signal voltage
+adaption if required, i.e. for ESPs.  <BR><BR>We can use the external
 reference voltage pin AREF of hte Arduino to further stretch the
 analog readings for a better resolution: with an external 10k
 resistor from AREF to +5V. AREF has internally about 32k to GND.<BR>It
