@@ -93,32 +93,9 @@ make use of this, find out, which resistor fits for your setup, try
 with 10k as initial value to get ADC readings of 900 to 950 with a
 dry sensor. This resistor is between +5V VCC and the AREF
 pin.<BR>Additionally uncomment the line
-&quot;analogReference(EXTERNAL);&quot;<BR><BR>Instead of (only)
-extending the spread of the analog readings, we can also make use of
-the external reference to compensate thermal effects on the
-permittivity of water.<BR>This can be helpful, if your setup is not
-located under constant temperatures like outdoor, or if you deal with
-&quot;cold&quot; or &quot;hot&quot; water.<BR>The temperature
-influence on the permittivity of water is quite high. If you want to
-measure a water level in an outdoor tank, the temperature span can
-easily be<BR>somewhere between 0&deg;C and 50&deg;C. Relative to 25&deg;C
-the &quot;error&quot; without temperature compensation can be around
-+-11% in this temperature range.<BR>If this is too much deviation, we
-just need an additional 47k NTC (EPCOS K164 characteristic
-(B25/100=4450 K)) and a 4k7 resistor for a few cents.<BR>The NTC and
-the additional resistor are in series and located between the AREF
-pin to GND. The resistor from AREF to 5V has to be 6k8 in this case
-to maintain a maximum ADC reading of about 950 (&lt;1023) with a
-&quot;dry&quot; sensor.<BR>With this simple circuit the reference
-voltage changes by ca. +-10% @ 25&deg;C +-25K (0&deg;C to 50&deg;C).
-This should compensate the change in the permittivity of the water
-sufficiently between 0&deg;C and 100&deg;C.<BR>The NTC can be
-soldered on the Arduino directly, or it can be located at the bottom
-of the water tank if you expect &quot;rapid&quot; ambient temperature
-changes, or<BR>if you need to measure the water level while filling
-the tank with &quot;hot&quot; or &quot;cold&quot; water.<BR>Measurements
-in icy water (below 0&deg;C) or in boiling water is
-&quot;impossible&quot;.<BR><BR>Temperature influence on permittivity
+&quot;analogReference(EXTERNAL);&quot;<BR>
+  The thermal compensation will be available soon...
+  <BR><BR>Temperature influence on permittivity
 of water: <BR>0&deg;C:87.81, 10&deg;C:83.99, 20&deg;C:80.27,
 30&deg;C:76.67 40&deg;C:73.22 50&deg;C:69.90 60&deg;C:66.73
 70&deg;C:63.70 80&deg;C:60.81 90&deg;C:58.05 100&deg;C:55.41 (IAPS,
