@@ -141,5 +141,7 @@ if you use the analog output. The analog signal is always
 present.<BR><BR>This is only a suggestion, please verify everything
 by yourself, I take no responsibility for any problems arising from
 it. I did not test all conditions.</FONT></P>
+<P> This project with its program and documentation is published under
+the rights of GNU Public License </P>
 </BODY>
 </HTML>
