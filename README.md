@@ -40,7 +40,7 @@ To calculate the polynom, it is required to measure about 10 values with your fi
 If the calculation with the gained formula is being done on the host computer, the "Sensor Arduino" with this program can be housed sealed and inacessible and all
 "calibrations" can be done on the host computer.
 
-We can use the external reference voltage pin AREF of hte Arduino to further stretch the analog readings for a better resolution: with an external 10k resistor from AREF to +5V. AREF has about 32k to GND.
+We can use the external reference voltage pin AREF of hte Arduino to further stretch the analog readings for a better resolution: with an external 10k resistor from AREF to +5V. AREF has internally about 32k to GND.
 It lowers the internal 5V ADC reference to about 3.75V and causes the previously discussed maximum voltage UmeasMax to increase from 66% to >90% (this is the target).
 If the ext reference is wanted, this has to be done before the calculation of the correlation of the ADC values with the needed output like immersion depth, volume, ...
 To make use of this, find out, which resistor fits for your setup, try with 10k as initial value to get ADC readings of 900 to 950 with a dry sensor. This resistor is between +5V VCC and the AREF pin.
