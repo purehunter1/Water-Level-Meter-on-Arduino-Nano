@@ -93,7 +93,7 @@ with 10k as initial value to get ADC readings of 900 to 950 with a
 dry sensor. This resistor is between +5V VCC and the AREF
 pin.<BR>Additionally uncomment the line
 &quot;analogReference(EXTERNAL);&quot;<BR>
-  Thermal compensation might be required, if greater temperature ranges will occur.
+  Thermal compensation might be required, if greater temperature ranges have to be served.
   <BR><BR>Temperature influence on permittivity
 of water: <BR>0&deg;C:87.81, 10&deg;C:83.99, 20&deg;C:80.27,
 30&deg;C:76.67 40&deg;C:73.22 50&deg;C:69.90 60&deg;C:66.73
