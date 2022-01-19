@@ -45,16 +45,7 @@ If the ext reference is wanted, this has to be done before the calculation of th
 To make use of this, find out, which resistor fits for your setup, try with 10k as initial value to get ADC readings of 900 to 950 with a dry sensor. This resistor is between +5V VCC and the AREF pin.
 Additionally uncomment the line "analogReference(EXTERNAL);"
 
-Instead of (only) extending the spread of the analog readings, we can also make use of the external reference to compensate thermal effects on the permittivity of water.
-This can be helpful, if your setup is not located under constant temperatures like outdoor, or if you deal with "cold" or "hot" water.
-The temperature influence on the permittivity of water is quite high. If you want to measure a water level in an outdoor tank, the temperature span can easily be
-somewhere between 0°C and 50°C. Relative to 25°C the "error" without temperature compensation can be around +-11% in this temperature range.
-If this is too much deviation, we just need an additional 47k NTC (EPCOS K164 characteristic (B25/100=4450 K)) and a 4k7 resistor for a few cents.
-The NTC and the additional resistor are in series and located between the AREF pin to GND. The resistor from AREF to 5V has to be 6k8 in this case to maintain a maximum ADC reading of about 950 (<1023) with a "dry" sensor.
-With this simple circuit the reference voltage changes by ca. +-10% @ 25°C +-25K (0°C to 50°C). This should compensate the change in the permittivity of the water sufficiently between 0°C and 100°C.
-The NTC can be soldered on the Arduino directly, or it can be located at the bottom of the water tank if you expect "rapid" ambient temperature changes, or
-if you need to measure the water level while filling the tank with "hot" or "cold" water.
-Measurements in icy water (below 0°C) or in boiling water is "impossible".
+Temperature compensation may be required, if greater temperature ranges have to be served.
 
 Temperature influence on permittivity of water: 
 0°C:87.81, 10°C:83.99, 20°C:80.27, 30°C:76.67 40°C:73.22 50°C:69.90 60°C:66.73 70°C:63.70 80°C:60.81 90°C:58.05 100°C:55.41 (IAPS, U.Grigull, München 1983)
