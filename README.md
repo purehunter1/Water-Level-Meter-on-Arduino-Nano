@@ -7,9 +7,8 @@
 <P STYLE="margin-bottom: 0cm">#
 Water-Level-Meter-on-Arduino-Nano<BR><BR>This project shows how to
 build up a water level meter with a self-made capacitive sensor based
-on an Arduino Nano with only very few additional components.<BR>It
-can be configured with an optional temperature compensation realized
-with only 3 more cheap components.<BR><BR>Measurement values are
+on an Arduino Nano with only very few additional components.<BR>
+  <BR>Measurement values are
 averaged over n cycles for stable results and normalized to 255 to fit in one Byte for
 easy serial communication.<BR>The program can be modified to get the
 output as an analog value instead or additional to the serial data
@@ -94,7 +93,7 @@ with 10k as initial value to get ADC readings of 900 to 950 with a
 dry sensor. This resistor is between +5V VCC and the AREF
 pin.<BR>Additionally uncomment the line
 &quot;analogReference(EXTERNAL);&quot;<BR>
-  The thermal compensation will be available soon...
+  Thermal compensation might be required, if greater temperature ranges will occur.
   <BR><BR>Temperature influence on permittivity
 of water: <BR>0&deg;C:87.81, 10&deg;C:83.99, 20&deg;C:80.27,
 30&deg;C:76.67 40&deg;C:73.22 50&deg;C:69.90 60&deg;C:66.73
@@ -119,6 +118,6 @@ present.<BR><BR>This is only a suggestion, please verify everything
 by yourself, I take no responsibility for any problems arising from
 it. I did not test all conditions.</FONT></P>
 <P> This project with its program and documentation is published under
-the rights of GNU Public License </P>
+the rights of GNU General Public License </P>
 </BODY>
 </HTML>
